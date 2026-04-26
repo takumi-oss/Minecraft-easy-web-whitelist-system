@@ -1,0 +1,23 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Whitelist Web Addon",
+    "description": "Webフォームからプレイヤー名を受け取り /whitelist add を実行するアドオン",
+    "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "f0e1d2c3-b4a5-6789-fedc-ba9876543210",
+      "entry": "scripts/main.js",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    { "module_name": "@minecraft/server",     "version": "1.14.0"      },
+    { "module_name": "@minecraft/server-net", "version": "1.0.0-beta"  }
+  ]
+}
